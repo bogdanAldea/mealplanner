@@ -1,3 +1,6 @@
-from django.db import models
+from django.contrib.auth import models
 
-# Create your models here.
+
+class Cook(models.AbstractUser):
+    """Model implements the AbstractUser class,
+    defining a custom application user."""
