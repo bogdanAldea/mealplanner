@@ -1,4 +1,4 @@
-const showMenu = (togglerId, navId, bodyId, headerId) => {
+export const showMenu = (togglerId, navId, bodyId, headerId) => {
     const toggler = document.getElementById(togglerId),
     navEl = document.getElementById(navId),
     bodyEl = document.getElementById(bodyId),
@@ -14,4 +14,4 @@ const showMenu = (togglerId, navId, bodyId, headerId) => {
     }
 }
 
-showMenu('toggler-icon', 'sidebar', 'body', 'header')
+//showMenu('toggler-icon', 'sidebar', 'body', 'header')

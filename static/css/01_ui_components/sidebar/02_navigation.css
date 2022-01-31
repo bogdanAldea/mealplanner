@@ -26,13 +26,12 @@
     transition: .3s;
 }
 
-.nav-link:hover {
-    color: var(--light);
+a.nav-link: hover {
     text-decoration: none;
 }
 
 .nav-link-name {
     font-size: 12px;
-    font-family: var(--medium-font);
-    text-transform: uppercase;
+    font-family: var(--menu-link);
+    text-transform: capitalize;
 }
