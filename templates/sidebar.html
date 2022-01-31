@@ -19,7 +19,8 @@
         <!--    Menu links    -->
         <div class="nav-links">
 
-            <a href="#" class="nav-link">
+            {% url 'users:dashboard' as url %}
+            <a href="{{ url }}" class="nav-link {% if request.path == url %}active{% endif %}">
                 <i class='bx bxs-dashboard link-icon'></i>
                 <span class="nav-link-name">Dashboard</span>
             </a>

@@ -41,8 +41,11 @@
 
     <!-- Avatar for auth user -->
     <li class="nav-item ms-3">
-        <img src="../static/assets/avatar.png"
-             class="rounded-circle" height="30" width="30" alt=""/>
+        {% url 'users:account' as url %}
+        <a href="{{ url }}">
+            <img src="../static/assets/avatar.png"
+                 class="rounded-circle" height="30" width="30" alt=""/>
+        </a>
     </li>
 
 </ul>
