@@ -25,19 +25,19 @@
             </a>
 
             {% url 'cookbook:cookbook' as url %}
-            <a href="{{ url }}" class="nav-link">
+            <a href="{{ url }}" class="nav-link {% if request.path == url %}active{% endif %}">
                 <i class='bx bxs-book link-icon'></i>
                 <span class="nav-link-name">Cookbook</span>
             </a>
 
             {% url 'ingredient:ingredient' as url %}
-            <a href="{{ url }}" class="nav-link">
+            <a href="{{ url }}" class="nav-link {% if request.path == url %}active{% endif %}">
                 <i class='bx bx-barcode link-icon'></i>
                 <span class="nav-link-name">Ingredients</span>
             </a>
 
             {% url 'pantry:pantry' as url %}
-            <a href="{{ url }}" class="nav-link">
+            <a href="{{ url }}" class="nav-link {% if request.path == url %}active{% endif %}">
                 <i class='bx bxs-store-alt link-icon'></i>
                 <span class="nav-link-name">Pantry</span>
             </a>
