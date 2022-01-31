@@ -1,0 +1,8 @@
+.user--message {
+    font-family: var(--medium-font);
+    color: var(--dark);
+}
+
+.welcome-msg {
+    font-family: var(--regular-font);
+}

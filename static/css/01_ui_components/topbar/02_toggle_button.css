@@ -1,0 +1,5 @@
+.menu-toggle-btn {
+    color: var(--dark-accent);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
