@@ -9,3 +9,7 @@
     color: #31395B;
 }
 
+.calendar-widget .label, .calendar-widget .date {
+    font-size: 14px;
+}
+
