@@ -20,11 +20,11 @@
 <ul class="navbar-nav ml-auto mr-3 d-flex flex-row horizontal-links">
 
     <!--    CMS Settings icon  -->
-    <li class="nav-item">
-        <a class="me-3 mr-lg-0">
-            <i class='bx bxs-cog cms-setting-icon'></i>
-        </a>
-    </li>
+<!--    <li class="nav-item">-->
+<!--        <a class="me-3 mr-lg-0">-->
+<!--            <i class='bx bxs-cog cms-setting-icon'></i>-->
+<!--        </a>-->
+<!--    </li>-->
 
     <!--    Notifications icon  -->
     <li class="nav-item mr-5" id="dropdown-notification">
@@ -36,16 +36,21 @@
     <!--  Welcome message for authenticated user -->
     <li class="nav-item user-message">
         <span class="welcome-msg">Welcome, </span>
-        <span class="logged-username">Bogdan</span>
+        <span class="logged-username">{{ request.user.first_name }}</span>
     </li>
 
     <!-- Avatar for auth user -->
-    <li class="nav-item ms-3">
-        {% url 'users:account' as url %}
-        <a href="{{ url }}">
-            <img src="../static/assets/avatar.png"
-                 class="rounded-circle" height="30" width="30" alt=""/>
-        </a>
+<!--    <li class="nav-item ms-3">-->
+<!--        {% url 'users:account' as url %}-->
+<!--        <a href="{{ url }}">-->
+<!--            <img src="../static/assets/avatar.png"-->
+<!--                 class="rounded-circle" height="30" width="30" alt=""/>-->
+<!--        </a>-->
+<!--    </li>-->
+
+    <li class="nav-item ms-3 logout">
+        {% url "users:logout" as url %}
+        <a href="{{ url }}" class="logout-btn">Logout &rarr;</a>
     </li>
 
 </ul>
