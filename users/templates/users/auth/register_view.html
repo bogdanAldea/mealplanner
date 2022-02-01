@@ -1,0 +1,53 @@
+{% extends 'form.html' %}
+{% load static %}
+
+
+{% block user_state_message %}
+    Already have and account?
+{% endblock user_state_message%}
+
+
+{% block user_state_action %}
+    {% url "users:login" as url %}
+    <a href="{{ url }}" class="btn auth-btn">Login</a>
+{% endblock user_state_action %}
+
+
+{% block form_content %}
+    <form action="" method="post" class="custom-form">
+        {% csrf_token %}
+
+        <div class="form-title mb-5">
+            <h1 class="form-action-text">Sign up to create your meal plans.</h1>
+            <h6 class="form-action-description">Complete the following fields</h6>
+        </div>
+
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>First Name</div>
+            <div class="field input col-md-12">{{ registration_form.first_name }}</div>
+        </div>
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>Last Name</div>
+            <div class="field input col-md-12">{{ registration_form.last_name }}</div>
+        </div>
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>Username</div>
+            <div class="field input col-md-12">{{ registration_form.username }}</div>
+        </div>
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>Email Address</div>
+            <div class="field input col-md-12">{{ registration_form.email }}</div>
+        </div>
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>Password</div>
+            <div class="field input col-md-12">{{ registration_form.password1 }}</div>
+        </div>
+        <div class="row field-row">
+            <div class="field label col-md-12"><label for=""></label>Confirm Password</div>
+            <div class="field input col-md-12">{{ registration_form.password2 }}</div>
+        </div>
+
+        <button type="submit" class="btn general-button register-res-btn">Create account &rarr;</button>
+
+    </form>
+{% endblock form_content %}
