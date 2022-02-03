@@ -1,0 +1,19 @@
+@import "../00_design_system/00_system_package.css";
+
+input, select {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--dark-accent);
+}
+input:focus {
+  border-color: green
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+.label {
+    padding: 0;
+    color: var(--light-grey);
+}

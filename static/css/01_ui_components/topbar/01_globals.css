@@ -27,3 +27,7 @@
         visibility: hidden;
     }
 }
+
+.calendar-widget .label, .calendar-widget .date, .welcome-msg, .logged-username {
+    font-size: 14px;
+}
