@@ -133,3 +133,5 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.Cook'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
