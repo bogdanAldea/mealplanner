@@ -1,0 +1,85 @@
+@import "../00_design_system/00_system_package.css";
+
+
+.form-body-full {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.form-page {
+    height: 100%;
+}
+
+.presentation-col {
+    background: var(--dark-accent);
+}
+
+.form-completion-col {
+    background: var(--light);
+}
+
+.app-details {
+    position: fixed;
+    top: 35%;
+}
+
+.form-app-name, .form-app-desc {
+    color: var(--light);
+}
+
+.form-app-name {
+    font-weight: 800;
+}
+
+.form-container {
+    margin-top: 100px;
+}
+
+.cta-text, .cta-btn {
+    height: inherit;
+}
+
+.field, .submit-btn-row {
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+input, select {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: var(--dark-accent);
+  }
+input:focus {
+    border-color: green
+  }
+  
+.label {
+      padding: 0;
+      color: var(--light-grey);
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .form-body-full {
+        height: 100%;
+    }
+
+    .app-details {
+      position: initial;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .presentation-col {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+  }

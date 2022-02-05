@@ -4,4 +4,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url="users:login")
 def PantryView(request):
-    return render(request, "pantry/menu/pantry_view.html")
+    return render(request, "pantry/pages/pantry.html")

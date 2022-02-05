@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row d-flex flex-row align-items-center page-title-row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 title-col">
+        <h1>Cookbook</h1>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-end content-display-controls" id="nav-tab" role="tablist">
+        <!-- <a href="#pill-recipes-as-table" class="" id="pill-to-table-view" data-toggle="pill" role="tab" aria-controls="pill-to-table", aria-selected="true">
+            <i class='bx bx-list-ul content-display-btn table-display me-2'></i>
+        </a>
+        <a href="#pill-recipes-as-grid" class="" id="pill-to-grid-view" data-toggle="pill" role="tab" aria-controls="pill-to-grid", aria-selected="false">
+            <i class='bx bxs-grid-alt content-display-btn grid-display'></i>
+        </a> -->
+        {% url 'cookbook:add-new-recipe' as url %}
+        <a href="{{ url }}" class="btn general-btn add-recipe-btn">
+            <i class='bx bx-plus'></i>
+            Add new recipe
+        </a>
+    </div>
+
+</div>
+
+<div class="container-fluid recipes-container">
+  {% include 'cookbook/listing/tables/table_cookbook_recipes.html' %}
+</div>
+</div>
+
+{% endblock content %}

@@ -19,6 +19,8 @@ def AddRecipeToCookbookView(request):
             recipe.save()
             request.session["new_recipe_instance_id"] = recipe.id
             return redirect("cookbook:add-instructions")
+        else:
+            print(create_recipe_form.errors)
 
-    context = {"form": create_recipe_form}
-    return render(request, "cookbook/forms/add_recipe_to_cookbook.html", context)
+    context = {"create_recipe_form": create_recipe_form}
+    return render(request, "cookbook/pages/add_new_recipe.html", context)

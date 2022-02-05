@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc9190dd-843f-4019-bf89-a1071fb4e80d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/templates/cookbook/forms/add_instruction_to_recipe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/templates/cookbook/forms/add_quantified_ingredients_to_recipe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/templates/cookbook/forms/add_recipe_to_cookbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/templates/cookbook/menu/cookbook_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/create/add_instructions_to_recipe_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create/add_instructions_to_recipe_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/create/add_quantified_ingredient_to_recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create/add_quantified_ingredient_to_recipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/create/add_recipe_to_cookbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create/add_recipe_to_cookbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/create/cookbook_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create/cookbook_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/templates/ingredient/menu/ingredient_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/views/menu/ingredient_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/menu/ingredient_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pantry/templates/pantry/menu/pantry_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pantry/views/menu/pantry_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/views/menu/pantry_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/00_design_system/01_globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/00_design_system/01_globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/00_design_system/02_variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/00_design_system/02_variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/00_components_package.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/buttons/00_buttons_package.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/buttons/01_base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/form/00_form_package.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/form/01_base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/form/02_fields.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/form/03_controls.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/sidebar/00_sidebar_package.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/sidebar/01_logo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/sidebar/02_navigation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/sidebar/03_globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/topbar/00_topbar_package.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/topbar/01_globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/topbar/02_toggle_button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/topbar/03_user_link.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_ui_components/topbar/04_calendar_widget.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styling.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/topbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/auth/login_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/auth/register_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/menu/account_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/menu/dashboard_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/auth/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/auth/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/auth/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/auth/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/menu/account_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/menu/account_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/menu/dashboard_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/menu/dashboard_view.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Use Case" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24Etyy0DmRqbPfwE8DrgFNTSSBr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Projects\Apps\mealplanner\static\css\02_fonts\Open Sans" />
+      <recent name="G:\Projects\Apps\mealplanner\static\assets\logos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Projects\Apps\mealplanner\cookbook\templates\cookbook\listing\cards" />
+      <recent name="G:\Projects\Apps\mealplanner\templates" />
+      <recent name="G:\Projects\Apps\mealplanner\cookbook\templates\cookbook\menu" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc9190dd-843f-4019-bf89-a1071fb4e80d" name="Changes" comment="" />
+      <created>1643207846371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643207846371</updated>
+    </task>
+    <servers />
+  </component>
+</project>

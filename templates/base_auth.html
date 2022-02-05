@@ -1,0 +1,31 @@
+{% extends "form.html" %}
+{% load static %}
+
+{% block user_state_message %}
+    Already have an account?
+{% endblock user_state_message%}
+
+{% block user_state_action %}
+    {% block auth_url_redirect %}
+    {% endblock auth_url_redirect %}
+{% endblock user_state_action %}
+
+{% block form_content %}
+<form method="post" action="" class="container-fluid form">
+    {% csrf_token %}
+
+    <div class="row justify-content-center align-items-center">
+        <div class="form-title-container auth-form-title text-center">
+            <h1 class="form-title">
+                {% block form_title %}
+                {% endblock form_title %}
+            </h1>
+            <h6 class="form-description">Complete the following fields.</h6>
+        </div>
+        <div class="row d-flex justify-content-center form-container">
+            {% block form %}
+            {% endblock form %}
+        </div>
+    </div>
+</form>
+{% endblock form_content %}

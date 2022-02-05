@@ -1,0 +1,9 @@
+{% for column in split_in_cols %}
+<div class="row d-flex align-items-center recipe-cards-row card-deck">
+
+    {% for recipe in column %}
+      {% include 'cookbook/cards/recipe_card.html' %}
+    {% endfor %}
+
+</div>
+{% endfor %}

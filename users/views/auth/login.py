@@ -19,4 +19,4 @@ def LoginUserView(request):
         else:
             print("EROOOOR")
 
-    return render(request, "users/auth/login_view.html")
+    return render(request, "users/pages/login.html")

@@ -4,7 +4,7 @@
     /*    Colors    */
     --accent            : #713BDB;
     --dark-accent       : #6429D6;
-    --dark              : #575F7B;
+    --dark              : #989eb4;
     --light-grey        : #C5C7D3;
     --light             : #ffffff;
     --background        : #F0F0F5;
@@ -20,6 +20,8 @@
     --z-index       : 100;
 
     /* Shadows */
-    --shadow: 0 8px 8px -6px #CFD8EB;
+    --shadow: 0 8px 8px -6px var(--light);
+    --dark-shadow: 0 8px 8px -6px var(--dark);
+    --accent-shadow: 0 8px 8px -6px var(--dark-accent);
 
 }

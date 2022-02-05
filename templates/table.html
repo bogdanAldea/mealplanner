@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<table class="table table-borderless general-table">
+
+    <thead class="general-thead">
+        
+        <tr class="general-tr">
+            <th class="table-title-col">
+                {% block table_title %}
+                {% endblock table_title %}
+            </th>
+        </tr>
+
+        <tr>
+            {% block table_headings %}
+            {% endblock table_headings %}
+        </tr>
+
+    </thead>
+
+    <tbody class="general-tbody">
+        {% block table_data %}
+        {% endblock table_data %}
+    </tbody>
+
+</table>

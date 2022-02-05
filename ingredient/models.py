@@ -21,6 +21,11 @@ class Ingredient(models.Model):
     name: str = models.CharField(max_length=50, unique=True)
     category: str = models.CharField(max_length=20, choices=IngredientCategory.choices)
 
+    def __str__(self):
+        return self.name
+
+    __repr__ = __str__
+
 
 class AbstractComponent(models.Model):
     """Class defines an abstract model that will allow other models

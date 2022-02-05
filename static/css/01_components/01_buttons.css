@@ -1,0 +1,54 @@
+@import "../00_design_system/00_system_package.css";
+
+
+.general-btn {
+    font-family: var(--medium-font);
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: 0.6s;
+    border: 2px solid var(--dark-accent);
+    border-radius: 0;
+    color: var(--dark-accent);
+}
+
+.general-btn:hover {
+    background: var(--dark-accent);
+    color: var(--light);
+    transition: 0.5s;
+}
+
+.card-btn {
+    border: none;
+    background-color: var(--light);
+    width: 100px;
+}
+
+.submit-form-btn {
+    width: fit-content;
+}
+
+.content-display-btn {
+    border: 2px solid var(--dark-accent);
+    background: var(--dark-accent);
+    color: var(--light);
+    font-size: 24px;
+    padding: 6px;
+    transition: .6s;
+}
+
+.content-display-btn:hover {
+    border: 2px solid var(--accent);
+    background: var(--accent);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.add-recipe-btn {
+    background: var(--accent);
+    color: var(--light);
+}
+
+.add-recipe-btn:hover {
+    background: var(--dark-accent);
+}

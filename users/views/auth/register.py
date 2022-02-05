@@ -15,4 +15,4 @@ def RegisterUserView(request):
             return redirect("users:login")  # redirect user to login page
 
     context: dict = {"registration_form": registration_form}
-    return render(request, "users/auth/register_view.html", context)
+    return render(request, "users/pages/register.html", context)

@@ -34,6 +34,9 @@ class Recipe(models.Model):
     cooking_time: int = models.PositiveIntegerField()
     cookbook: CookBook = models.ForeignKey(CookBook, on_delete=models.CASCADE)
 
+    class Meta:
+        ordering = ["name"]
+
 
 class RecipeReferenceMixin(models.Model):
     """Mixin model class that adds a reference to a recipe object

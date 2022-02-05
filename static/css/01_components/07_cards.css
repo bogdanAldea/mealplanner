@@ -1,0 +1,59 @@
+@import "../00_design_system/00_system_package.css";
+
+.recipes-container {
+    margin: 50px 0 50px 0;
+    padding: 0;
+}
+
+.recipe-cards-row {
+    margin-bottom: 25px;
+}
+
+.card {
+    padding: 30px 0 30px 0;
+    background: #553BD0;
+    box-shadow: var(--dark-shadow);
+    border: none;
+    color: var(--light);
+    text-align: center;
+}
+
+.card-recipe-icon {
+    font-size: 48px;
+    margin: auto; 
+}
+
+.card-recipe-icon path, .table-icon path {
+    fill: whitesmoke;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-recipe-category {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 11px;
+    color: var(--light-grey);
+}
+
+.general-table .breakfast, .breakfast {
+    background: #00cec9;
+}
+
+.general-table .lunch, .lunch{
+    background: #e17055;
+}
+
+.general-table .snack, .snack {
+    background: #706fd3;
+}
+
+.general-table .dinner, .dinner {
+    background: #576574;
+}
+
+.general-table .dessert, .dessert {
+    background: #B53471;
+}

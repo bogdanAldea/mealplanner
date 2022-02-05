@@ -1,0 +1,87 @@
+COOKBOOK
+    |- views:
+        |- AddRecipeToCookbookUseCase
+            |- AddNewRecipeView (Use Case)
+            |- AddInstructionToRecipeView (Use Case)
+            |- AddQuantifiedIngredientsToRecipeView (Use Case)
+        |- UpdateRecipeFromCookbookUseCase
+            |- UpdateRecipeView
+            |- UpdateInstructionView
+            |- UpdateQuantifiedIngredientView
+    |- templates:
+        |- pages:
+            |- cookbook.html
+            |- add_new_recipe.html
+            |- add_instructions_to_recipe.html
+            |- add_quantified_ingredients_to_recipe.html
+            |- update_recipe.html
+            |- update_instructions.html
+            |- update_quantified_ingredients.html
+        |- forms:
+            |- create_recipe_form.html
+            |- create_instruction_form.html
+            |- create_quantified_ingredient_form.html
+            |- update_recipe_form.html
+            |- update_instructions_form.html
+            |- update_quantified_ingredients_form.html
+        |- tables:
+            |- list_cookbook_recipes.html
+            |- list_quantified_ingredients.html
+            |- list_cooking_instructions.html
+
+INGREDIENTS
+    |- views:
+        |- AddNewIngredientUseCase
+            |- AddNewIngredientView
+        |- UpdateIngredientUseCase
+            |- UpdateIngredientView
+    |- templates:
+        |- pages:
+            |- ingredients.html
+            |- add_new_ingredient.html
+            |- update_ingredient.html
+        |- forms:
+            |- create_ingredient_form.html
+            |- update_ingredient_form.html
+        |- tables:
+            |- list_ingredients.
+
+PANTRY
+    |- views:
+        |- UpdatePantryIngredientUseCase
+            |- UpdatePantryIngredientView
+    |- templates:
+        |- pages:
+            |- pantry.html
+            |- update_pantry_ingredient.html
+        |- forms:
+            |- update_pantry_ingredient_form.html
+        |- tables:
+            |-  list_pantry_ingredients.html
+
+USER
+    |- views:
+        |- AdministrateDashboardView
+        |- UpdateAccountView
+        |- RegisterUserView
+        |- LoginUserView
+        |- LogoutUserView
+    |- templates:
+        |- pages:
+            |- register.html
+            |- login.html
+            |- update_account.html
+            |- dashboard.html
+        |- forms:
+            |- register_user_form.html
+            |- login_user_form.html
+            |- update_account_form.html
+        |- tables:
+            ...
+
+
+CSS
+    |- buttons
+    |- forms
+    |- tables
+    |- globals
