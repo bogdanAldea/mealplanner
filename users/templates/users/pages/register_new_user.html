@@ -1,0 +1,14 @@
+{% extends 'base_auth.html' %}
+{% load static %}
+
+{% block auth_url_redirect %}
+    <a href="{% url 'users:login' %}" class="btn general-btn solid-btn-accent">Login</a>
+{% endblock auth_url_redirect %}
+
+{% block form_title %}
+    Register your account.
+{% endblock form_title %}
+
+{% block form %}
+    {% include 'users/forms/user_register_form.html' %}
+{% endblock form %}

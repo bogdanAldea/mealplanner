@@ -5,7 +5,7 @@ from users import forms
 
 def RegisterUserView(request):
     """User registration view that executes a registration form completed and
-    submit by a user in order to create a new account. """
+    submit by a user in order to create_views a new account. """
 
     registration_form: forms.UserCreationForm = forms.CreateCookUserForm()
     if request.method == "POST":
@@ -15,4 +15,4 @@ def RegisterUserView(request):
             return redirect("users:login")  # redirect user to login page
 
     context: dict = {"registration_form": registration_form}
-    return render(request, "users/pages/register.html", context)
+    return render(request, "users/pages/register_new_user.html", context)

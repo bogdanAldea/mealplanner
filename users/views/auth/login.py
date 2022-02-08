@@ -16,7 +16,5 @@ def LoginUserView(request):
         if existing_user is not None:
             login(request, existing_user)
             return redirect("users:dashboard")
-        else:
-            print("EROOOOR")
 
-    return render(request, "users/pages/login.html")
+    return render(request, "users/pages/login_user.html")
