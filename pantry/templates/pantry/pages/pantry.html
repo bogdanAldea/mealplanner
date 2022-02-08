@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row d-flex flex-row align-items-center">
+
+    <div class="d-flex align-items-center control-container">
+        <h1>Pantry</h1>
+    </div>
+    
+    {% include 'pantry/tables/pantry_table.html' %}
+</div>
+{% endblock content %}
