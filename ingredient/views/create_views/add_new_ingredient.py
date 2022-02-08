@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from ingredient import forms, models
+from pantry.models import Pantry, InventoryIngredient
 
 
 def AddNewIngredientView(request):
@@ -12,9 +13,19 @@ def AddNewIngredientView(request):
     if request.method == "POST":
         create_ingredient_form = forms.CreateIngredientForm(request.POST)
         if create_ingredient_form.is_valid():
+
             ingredient: models.Ingredient = create_ingredient_form.save(commit=False)
             ingredient.market = market
             ingredient.save()
+
+            pantry: Pantry = Pantry.objects.get(cook=request.user)
+            inventory_ingredient: InventoryIngredient = InventoryIngredient(
+                ingredient=ingredient,
+                quantity=0,
+                pantry=pantry
+            )
+            inventory_ingredient.save()
+
             return redirect("ingredient:ingredients")
         print(create_ingredient_form.errors)
 
