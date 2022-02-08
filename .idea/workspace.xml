@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc9190dd-843f-4019-bf89-a1071fb4e80d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ingredient/migrations/0002_market.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingredient/migrations/0003_ingredient_market.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pantry/views/list_views/pantry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/migrations/0002_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/migrations/0003_alter_recipe_options_alter_recipe_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/list_views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/views/create_views/add_instructions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create_views/add_instructions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/views/create_views/add_recipe_to_cookbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/create_views/add_recipe_to_cookbook.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/views/list_views/cookbook_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/list_views/cookbook.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/views/update_views/update_recipe_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/update_views/update_recipe_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/views/menu/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/views/menu/ingredient_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/list_views/ingredient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pantry/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/pages/login_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/pages/login_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/pages/register_new_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/pages/register_new_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/list_views/cookbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/list_views/cookbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/templates/ingredient/pages/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/templates/ingredient/pages/ingredients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/views/create_views/add_new_ingredient.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/create_views/add_new_ingredient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredient/views/list_views/ingredient.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/list_views/ingredient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pantry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pantry/views/menu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/views/list_views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pantry/views/menu/pantry_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/auth/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/auth/login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Use Case" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -65,7 +52,7 @@
     <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/assets/logos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
