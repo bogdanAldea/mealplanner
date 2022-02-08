@@ -1,8 +1,8 @@
 from django.urls import path
-from .views.menu import pantry_view
+from .views.list_views import pantry
 
 app_name = 'pantry'
 
 urlpatterns: list = [
-    path("", pantry_view.PantryView, name="pantry"),
+    path("", pantry.PantryView, name="pantry"),
 ]
