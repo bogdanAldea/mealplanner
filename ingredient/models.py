@@ -29,7 +29,7 @@ class Ingredient(models.Model):
 
 class AbstractComponent(models.Model):
     """Class defines an abstract model that will allow other models
-    to inherit from without having to instantiate or create database
+    to inherit from without having to instantiate or create_views database
     record of this parent class."""
 
     ingredient: Ingredient
