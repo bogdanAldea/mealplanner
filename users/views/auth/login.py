@@ -15,6 +15,6 @@ def LoginUserView(request):
 
         if existing_user is not None:
             login(request, existing_user)
-            return redirect("users:dashboard")
+            return redirect("cookbook:cookbook")
 
     return render(request, "users/pages/login_user.html")
