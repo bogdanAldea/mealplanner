@@ -4,6 +4,11 @@ from cookbook.models import Recipe, Instruction
 
 
 def AddInstructionToRecipeView(request):
+    """Function based view that handles the creation of a new instruction objects
+    for a recipe object. During the creation of a new recipe object, the recipe objects
+    that was newly created will be passed between creation views of contained objects
+    via the session object of django."""
+
     saved_session_obj_id: int = request.session.get("new_recipe_instance_id")
     recipe: Recipe = Recipe.objects.get(id=saved_session_obj_id)
 
@@ -17,12 +22,12 @@ def AddInstructionToRecipeView(request):
         if add_instruction_formset.is_valid():
             add_instruction_formset.save()
             return redirect("cookbook:add-ingredients")
-        print(add_instruction_formset.non_form_errors())
-        print(recipe)
-        print(add_instruction_formset.is_valid())
+        print(add_instruction_formset.error)
+        print(add_instruction_formset.non_form_errors)
 
     context = {
         "recipe": recipe,
+        "is_formset": True,
         "formset": add_instruction_formset
     }
     return render(request, "cookbook/pages/add_instructions.html", context)
