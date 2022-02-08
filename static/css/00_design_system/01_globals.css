@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
+}
+
+.main-wrapper {
+    height: calc(100vh - var(--header-height));
+    width: 90%;
+}
+
+.app-body {
     position: relative;
     margin: var(--header-height) 0 100px 0;
-    /*padding: 0 1rem;*/
     transition: .5s;
     background-color: var(--2nd-background);
 }
@@ -29,4 +37,9 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, span {
     font-family: var(--medium-font);
+}
+
+h1 {
+    font-size: 36px;
+    color: var(--dark)
 }

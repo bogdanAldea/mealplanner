@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 
       </head>
-      <body id="body">
+      <body id="body" class="app-body">
 
             {#    HEADER: TOP BAR    #}
             <header class="header-section" id="header">
@@ -43,8 +43,10 @@
 
             {#    CONTENT BLOCK    #}
             <div class="content-block" id="content">
+              <div class="container-fluid justify-content-center main-wrapper">
                 {% block content %}
                 {% endblock content %}
+              </div>
             </div>
 
           <!-- Optional JavaScript -->

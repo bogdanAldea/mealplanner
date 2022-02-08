@@ -1,0 +1,74 @@
+@import "../00_design_system/00_system_package.css";
+
+.general-table {
+    border-collapse: separate;
+    border-spacing: 1px 10px;
+}
+
+.general-thead {
+    font-size: 9px;
+    font-family: var(--medium);
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+.general-tbody {
+    background-color: var(--light);
+    border-radius: 50px;
+}
+
+.general-table .icon-cell {
+    background-color: var(--dark-accent);
+    width: 16px;
+}
+
+.general-table td {
+    font-size: 14px;
+    font-family: var(--medium);
+    color: #96A1A9;
+    vertical-align: middle;
+}
+
+.table-edit-icon, .table-delete-icon {
+    font-size: 24px;
+}
+
+.table-edit-icon {
+    color: var(--dark-accent);
+}
+
+.table-delete-icon {
+    color: #B53471;
+}
+
+.general-table .breakfast, .general-table .vegetable, .breakfast {
+    background: #00cec9;
+}
+
+.general-table .lunch, .general-table .meat, .lunch{
+    background: #e17055;
+}
+
+.general-table .snack, .general-table .fruit, .snack {
+    background: #706fd3;
+}
+
+.general-table .dinner, .general-table .seasoning, .dinner {
+    background: #576574;
+}
+
+.general-table .dessert, .general-table .dairy .dessert {
+    background: #B53471;
+}
+
+.general-table .flour {
+    background: wheat;
+}
+
+.general-table .other {
+    background: black;
+}
+
+.ingredients-table-col {
+    margin-top: 50px;
+}

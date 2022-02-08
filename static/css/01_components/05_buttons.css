@@ -1,0 +1,33 @@
+@import "../00_design_system/00_system_package.css";
+
+
+.general-btn {
+    font-family: var(--medium-font);
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: 0.6s;
+    padding: 10px 20px 10px 20px;
+}
+
+.outline-btn-accent {
+    border: 2px solid var(--dark-accent);
+    border-radius: 0;
+    color: var(--dark-accent);
+}
+
+.solid-btn-accent {
+    background-color: var(--accent);
+    color: var(--light);
+    border-radius: 0;
+}
+
+.general-btn:hover {
+    background-color: var(--dark-accent);
+    color: var(--light);
+    transition: .6s;
+}
+
+.auth-form-submit-btn {
+    width: 60%;
+}

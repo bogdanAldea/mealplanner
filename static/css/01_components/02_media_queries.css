@@ -1,0 +1,68 @@
+@import "../00_design_system/00_system_package.css";
+
+
+@media only screen and (max-width: 600px) {
+
+    .content-block {
+        margin: 150px 0 0 0;
+    }
+
+    .main-wrapper {
+        width: auto;
+    }
+
+    .control-container {
+        justify-content: space-between;
+    }
+
+    .logout {
+        margin-right: 30px;
+    }
+
+    .menu-toggle-btn {
+        margin-left: 30px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .app-details {
+        margin: 30px 0 30px 0;
+    }
+
+    .form-app-name {
+        font-size: 24px;
+        margin-top: 0!important;
+    }
+
+    .form-app-desc {
+        font-size: 16px;
+    }
+
+    .header-cta {
+        margin: 0!important;
+        justify-content: center;
+    }
+
+    .form-completion-col {
+        padding: 30px 0 30px 0;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+
+    .form-container {
+        width: 80%!important;
+    }
+
+    .auth-form-submit-btn {
+        width: 100%!important;
+    }
+
+    .calendar, #dropdown-notification, .user-message {
+        display: none;
+    }
+}
