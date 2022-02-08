@@ -10,6 +10,11 @@ class Pantry(models.Model):
 
     cook: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return f"{self.cook.__str__()}'s Pantry"
+
+    __repr__ = __str__
+
 
 class InventoryIngredient(AbstractComponent):
     """Class implements the AbstractComponent class and implement its fields.
@@ -19,3 +24,8 @@ class InventoryIngredient(AbstractComponent):
     pantry: Pantry = models.ForeignKey(Pantry, on_delete=models.CASCADE)
     ingredient = models.OneToOneField(Ingredient, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return f"<{self.ingredient.name}: {self.quantity}>"
+
+    __repr__ = __str__
