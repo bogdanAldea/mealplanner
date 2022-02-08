@@ -5,7 +5,7 @@ from cookbook.models import Recipe, CookBook
 
 @login_required(login_url="users:login")
 def CookbookView(request):
-    cookbook = CookBook.objects.get(cook_user=request.user)
+    cookbook = CookBook.objects.get(cook=request.user)
     recipes = Recipe.objects.filter(cookbook=cookbook)
 
     # split recipe queryset in sub lists of 4 objects each

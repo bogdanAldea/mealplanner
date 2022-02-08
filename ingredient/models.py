@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import Cook
 
 
 class IngredientCategory(models.TextChoices):
@@ -15,11 +16,18 @@ class IngredientCategory(models.TextChoices):
     OTHER: str = "Other"
 
 
+class Market(models.Model):
+    """Class defines the model that encapsulates all ingredients
+    created for each user."""
+    cook: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
+
+
 class Ingredient(models.Model):
     """Class defines the model that represents an ingredient object."""
 
     name: str = models.CharField(max_length=50, unique=True)
     category: str = models.CharField(max_length=20, choices=IngredientCategory.choices)
+    market: Market = models.ForeignKey(Market, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

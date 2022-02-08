@@ -1,0 +1,24 @@
+{% extends 'base_model_form.html' %}
+
+
+{% block form_title %}
+    Ingredient form.
+{% endblock form_title %}
+
+
+{% block form %}
+<div class="row field">
+    <label for="" class="label">Ingredient Name</label>
+    {{ ingredient_form.name }}
+</div>
+
+<div class="row field">
+    <label for="" class="label">Ingredient Category</label>
+    {{ ingredient_form.category }}
+</div>
+
+
+<div class="row submit-btn-row">
+    <button class="btn general-btn solid-btn-accent">Create</button>
+</div>
+{% endblock form %}

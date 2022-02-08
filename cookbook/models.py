@@ -22,7 +22,7 @@ class CookBook(models.Model):
     created by the user. The cookbook model will be used to create_views
     new meal plans and generate text files with shopping lists."""
 
-    cook_user: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
+    cook: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
 
 
 class Recipe(models.Model):

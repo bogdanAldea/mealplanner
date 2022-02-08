@@ -9,7 +9,7 @@ def UpdateRecipeView(request, pk: int):
     that updates all contained children of the recipe model like Instructions
     and QuantifiedIngredients."""
 
-    cookbook = CookBook.objects.get(cook_user=request.user)
+    cookbook = CookBook.objects.get(cook=request.user)
     recipe = Recipe.objects.get(cookbook=cookbook, id=pk)
 
     form = forms.UpdateRecipeForm(instance=recipe)

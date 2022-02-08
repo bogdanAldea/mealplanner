@@ -8,7 +8,7 @@ class Pantry(models.Model):
     a new pantry object will be also created from the existing ingredient objects
     at that time in the database."""
 
-    cook_user: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
+    cook: Cook = models.OneToOneField(Cook, on_delete=models.CASCADE)
 
 
 class InventoryIngredient(AbstractComponent):

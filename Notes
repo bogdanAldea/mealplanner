@@ -1,13 +1,25 @@
 COOKBOOK
     |- views:
+
+        |- ShowCookbookRecipesViewUseCase
+            |- ShowCookbookRecipesView
+
         |- AddRecipeToCookbookUseCase
-            |- AddNewRecipeView (Use Case)
-            |- AddInstructionToRecipeView (Use Case)
-            |- AddQuantifiedIngredientsToRecipeView (Use Case)
+            |- AddNewRecipeView
+                |- CreateRecipeForm
+            |- AddInstructionToRecipeView
+                |- CreateInstructionsFormset
+            |- AddQuantifiedIngredientsToRecipeView
+                |- CreateIngredientForm
+
         |- UpdateRecipeFromCookbookUseCase
             |- UpdateRecipeView
+                |- UpdateRecipeForm
             |- UpdateInstructionView
+                |- UpdateInstructionsFormset
             |- UpdateQuantifiedIngredientView
+                |- UpdateIngredientsFormset
+
     |- templates:
         |- pages:
             |- cookbook.html

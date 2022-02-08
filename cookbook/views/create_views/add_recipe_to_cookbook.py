@@ -8,7 +8,7 @@ def AddRecipeToCookbookView(request):
     Then, the newly created object's id is saved in the session and passed to views that
     create_views instructions and ingredients for the recipe."""
 
-    cookbook: models.CookBook = models.CookBook.objects.get(cook_user=request.user)
+    cookbook: models.CookBook = models.CookBook.objects.get(cook=request.user)
 
     create_recipe_form: forms.CreateRecipeForm = forms.CreateRecipeForm()
     if request.method == "POST":
@@ -19,8 +19,6 @@ def AddRecipeToCookbookView(request):
             recipe.save()
             request.session["new_recipe_instance_id"] = recipe.id
             return redirect("cookbook:add-instructions")
-        else:
-            print(create_recipe_form.errors)
 
     context = {"recipe_form": create_recipe_form, "is_formset": False}
     return render(request, "cookbook/pages/add_recipe.html", context)
