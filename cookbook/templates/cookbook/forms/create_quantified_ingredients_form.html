@@ -1,0 +1,27 @@
+{% extends 'base_model_form.html' %}
+
+
+{% block form_title %}
+    Ingredients for {{ recipe.name }}
+{% endblock form_title %}
+
+{% block form %}
+    {{ formset.form_management }}
+
+    {% for form in formset %}
+        
+        <div class="row field">
+            <label for="" class="label">Ingredient</label>
+            {{ form.ingredient }}
+        </div>
+
+        <div class="row field">
+            <label for="" class="label">Quantity</label>
+            {{ form.quantity }}
+        </div>
+
+    {% endfor %}
+    <div class="row submit-btn-row">
+        <button class="btn general-btn solid-btn-accent">Add</button>
+    </div>
+{% endblock form %}

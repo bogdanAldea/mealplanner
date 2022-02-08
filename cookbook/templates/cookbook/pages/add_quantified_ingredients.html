@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row d-flex">
+
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ingredients-form-col">
+            {% include 'cookbook/forms/create_quantified_ingredients_form.html' %}
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 ingredients-table-col">
+            <div class="row d-flex">
+                <div class="col xs-8 col-sm-8 col-md-6 col-lg-6">
+                    <h5>Added ingredients.</h5>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 d-flex justify-content-end">
+                    {% url 'cookbook:cookbook' as url %}
+                    <a href="{{ url }}" class="btn general btn solid-btn-accent">
+                        Submit
+                    </a>
+                </div>
+            </div>
+            {% if ingredients %}
+            {% include 'cookbook/tables/created_quantified_ingredients_table.html' %}
+            {% else %}
+            <h3>There are no ingredients to show.</h3>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

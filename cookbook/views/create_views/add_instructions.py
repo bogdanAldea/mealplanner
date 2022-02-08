@@ -17,9 +17,12 @@ def AddInstructionToRecipeView(request):
         if add_instruction_formset.is_valid():
             add_instruction_formset.save()
             return redirect("cookbook:add-ingredients")
+        print(add_instruction_formset.non_form_errors())
+        print(recipe)
+        print(add_instruction_formset.is_valid())
 
     context = {
         "recipe": recipe,
         "formset": add_instruction_formset
     }
-    return render(request, "cookbook/pages/add_instruction.html", context)
+    return render(request, "cookbook/pages/add_instructions.html", context)

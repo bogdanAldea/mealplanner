@@ -1,0 +1,28 @@
+{% extends 'base_model_form.html' %}
+
+
+{% block form_title %}
+    Recipe form.
+{% endblock form_title %}
+
+
+{% block form %}
+<div class="row field">
+    <label for="" class="label">Recipe Name</label>
+    {{ recipe_form.name }}
+</div>
+
+<div class="row field">
+    <label for="" class="label">Recipe Category</label>
+    {{ recipe_form.category }}
+</div>
+
+<div class="row field">
+    <label for="" class="label">Cooking Time</label>
+    {{ recipe_form.cooking_time }}
+</div>
+
+<div class="row submit-btn-row">
+    <button class="btn general-btn solid-btn-accent">Add instructions</button>
+</div>
+{% endblock form %}
