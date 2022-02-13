@@ -42,7 +42,7 @@
     </td>
     <td>{{ ingredient.name }}</td>
     <td>{{ ingredient.category }}</td>
-    <td>{{ ingredient.inventoryingredient.quantity }}</td>
+    <td>{{ ingredient.market.cook.first_name }}</td>
     <td class="text-center">
         <a href="{% url 'ingredient:update-ingredient' ingredient.pk %}" class="recipe-edit-url">
             <i class='bx bxs-edit table-edit-icon'></i>
