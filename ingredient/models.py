@@ -25,9 +25,14 @@ class Market(models.Model):
 class Ingredient(models.Model):
     """Class defines the model that represents an ingredient object."""
 
-    name: str = models.CharField(max_length=50, unique=True)
+    name: str = models.CharField(max_length=50)
     category: str = models.CharField(max_length=20, choices=IngredientCategory.choices)
     market: Market = models.ForeignKey(Market, on_delete=models.CASCADE)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=["name", "market"], name="unique_ingredient_name")
+        ]
 
     def __str__(self):
         return self.name
