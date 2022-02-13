@@ -22,8 +22,13 @@ class InventoryIngredient(AbstractComponent):
     the default value to 0."""
 
     pantry: Pantry = models.ForeignKey(Pantry, on_delete=models.CASCADE)
-    ingredient = models.OneToOneField(Ingredient, on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=["ingredient", "pantry"], name="unique_ingredient_pantry")
+        ]
 
     def __str__(self):
         return f"<{self.ingredient.name}: {self.quantity}>"
