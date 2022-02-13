@@ -10,7 +10,7 @@ def IngredientView(request):
     which are hold in the Market model objects related to the current logged user."""
 
     market: Market = Market.objects.get(cook=request.user)
-    ingredients: list[Ingredient] = Ingredient.objects.all().filter(market=market)
+    ingredients: list[Ingredient] = Ingredient.objects.filter(market=market)
 
-    context = {"ingredients": ingredients}
+    context = {"ingredients": ingredients, "market": market, "total": len(ingredients)}
     return render(request, "ingredient/pages/ingredients.html", context)
