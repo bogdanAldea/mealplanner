@@ -12,7 +12,7 @@ def PantryView(request):
     pantry: Pantry = Pantry.objects.get(cook=request.user)
 
     UpdateInventoryIngredientFormset = inlineformset_factory(
-        parent_model=Pantry, model=InventoryIngredient, fields=("quantity",), extra=0
+        parent_model=Pantry, model=InventoryIngredient, fields=("quantity", ), extra=0
     )
 
     formset: UpdateInventoryIngredientFormset = UpdateInventoryIngredientFormset(instance=pantry)
