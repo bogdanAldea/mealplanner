@@ -1,0 +1,20 @@
+{% extends 'base_model_form.html' %}
+
+
+{% block form_title %}
+    Update Quantity for {{ ingredient.ingredient.name }}
+{% endblock form_title %}
+
+
+{% block form %}
+
+<div class="row field">
+    <label for="" class="label">Quantity</label>
+    {{ update_quantity_form.quantity }}
+</div>
+
+
+<div class="row submit-btn-row">
+    <button class="btn general-btn solid-btn-accent">Update</button>
+</div>
+{% endblock form %}
