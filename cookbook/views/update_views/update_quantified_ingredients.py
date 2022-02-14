@@ -21,6 +21,8 @@ def UpdateQuantifiedIngredientsView(request, pk: int):
         if update_quantified_ingredient_form.is_valid():
             update_quantified_ingredient_form.save()
             return redirect("cookbook:cookbook")
+        print(update_quantified_ingredient_form.errors)
+        print(update_quantified_ingredient_form.non_form_errors)
 
     context = {
         "formset": update_quantified_ingredient_form,
