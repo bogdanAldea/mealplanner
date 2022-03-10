@@ -92,6 +92,9 @@
             <i class='bx bx-trash-alt table-delete-icon'></i>
         </a>
     </td>
+    <td class="text-center">
+        <a href="{% url 'cookbook:recipe-detail' recipe.id %}" class="btn general-btn">View</a>
+    </td>
 </tr>
 {% endfor %}
 {% endblock table_data %}

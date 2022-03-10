@@ -8,7 +8,7 @@ app_name = 'cookbook'
 
 urlpatterns: list = [
     path("", cookbook.CookbookView, name="cookbook"),
-    path("recipe/<int:pk>/", recipe.RecipeDetailView, name="recipe_detail"),
+    path("recipe/<int:pk>/", recipe.RecipeDetailView, name="recipe-detail"),
     path("add-new-recipe/", add_recipe_to_cookbook.AddRecipeToCookbookView, name="add-new-recipe"),
     path("add-instructions/", add_instructions.AddInstructionToRecipeView, name="add-instructions"),
     path("add-ingredients/", add_quantified_ingredients.AddQuantifiedIngredientToRecipeView, name="add-ingredients"),

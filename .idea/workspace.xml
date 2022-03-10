@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc9190dd-843f-4019-bf89-a1071fb4e80d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pantry/views/list_views/pantry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookbook/views/list_views/cookbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/list_views/cookbook.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/templates/ingredient/pages/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/templates/ingredient/pages/ingredients.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/views/create_views/add_new_ingredient.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/create_views/add_new_ingredient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredient/views/list_views/ingredient.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingredient/views/list_views/ingredient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pantry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pantry/views/menu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pantry/views/list_views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pantry/views/menu/pantry_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views/auth/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/auth/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/templates/cookbook/tables/cookbook_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/templates/cookbook/tables/cookbook_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/detail_view/recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/detail_view/recipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookbook/views/update_views/update_quantified_ingredients.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookbook/views/update_views/update_quantified_ingredients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/01_components/00_components_package.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/01_components/00_components_package.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
     <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Study/Practice" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -61,11 +56,11 @@
       <recent name="G:\Projects\Apps\mealplanner\static\css\02_fonts\Open Sans" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Projects\Apps\mealplanner\cookbook\views\detail_view" />
       <recent name="G:\Projects\Apps\mealplanner\cookbook\templates\cookbook" />
       <recent name="G:\Projects\Apps\mealplanner\cookbook\views\list_views" />
       <recent name="G:\Projects\Apps\mealplanner\cookbook\templates\cookbook\listing\cards" />
       <recent name="G:\Projects\Apps\mealplanner\templates" />
-      <recent name="G:\Projects\Apps\mealplanner\cookbook\templates\cookbook\menu" />
     </key>
   </component>
   <component name="RunManager" selected="Python.add_quantified_ingredient_to_recipe">

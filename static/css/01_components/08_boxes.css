@@ -1,0 +1,5 @@
+@import "../00_design_system/00_system_package.css";
+
+.box {
+    box-shadow: var(--shadow);
+}
